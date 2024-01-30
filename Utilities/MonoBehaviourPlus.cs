@@ -1,18 +1,18 @@
 ﻿using UnityEngine;
 
-namespace Metatron
+/// <summary>
+/// Adds simple debugging filtering
+/// </summary>
+public class MonoBehaviourPlus : MonoBehaviour
 {
-	public class MonoBehaviourPlus : MonoBehaviour
-	{
-		public DebugLevel debugLevel;
-		public bool DebugMessages => debugLevel > DebugLevel.None;
-	}
+	public DebugLevel debugLevel;
+	public bool DebugMessages => debugLevel > DebugLevel.None;
+}
 
-	public enum DebugLevel
-	{
-		None,
-		Minimum,
-		Moderate,
-		All
-	}
+public enum DebugLevel
+{
+	None,
+	Minimum,
+	Moderate,
+	All
 }
